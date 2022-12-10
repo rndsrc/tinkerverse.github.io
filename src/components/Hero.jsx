@@ -54,13 +54,13 @@ export const Hero = () => {
               className="custom-button-colored w-80 sm:w-60 h-14 mr-0 sm:mr-4 lg:mr-10 mb-2 sm:mb-0"
               onClick={() => setIsModalOpen(true)}
             >
-              Get Started
+              User Waitlist
             </div>
             <div
               className="w-80 sm:w-60 h-14 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
               onClick={() => setIsModalOpen(true)}
             >
-              Live demo
+              Creator Waitlist
             </div>
           </div>
         </motion.div>
