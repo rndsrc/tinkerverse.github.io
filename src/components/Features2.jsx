@@ -5,7 +5,10 @@ import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features2 = () => (
-  <section className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
+  <section
+    className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4"
+    id="worlds"
+  >
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
