@@ -43,8 +43,8 @@ export const Navbar = () => {
             <a className="navbar-link" href="#features" aria-label="Features">
               Features
             </a>
-            <a className="navbar-link" href="#pricing" aria-label="Pricing">
-              Pricing
+            <a className="navbar-link" href="#worlds" aria-label="Worlds">
+              Worlds
             </a>
             <a className="navbar-link" href="#feedback" aria-label="Feedback">
               Feedback
@@ -64,12 +64,12 @@ export const Navbar = () => {
             <a
               className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/matt765/Tidestream"
+              href="https://github.com/tinkerverse"
               target="_blank"
               aria-label="source code"
             >
               <GithubIcon />
-              Source code
+              Develop
             </a>
           </div>
         </motion.div>
@@ -113,11 +113,11 @@ export const Navbar = () => {
               </a>
               <a
                 className="navbar-link"
-                href="#pricing"
+                href="#worlds"
                 onClick={() => setIsOpen(false)}
-                aria-label="Pricing"
+                aria-label="Worlds"
               >
-                Pricing
+                Worlds
               </a>
               <a
                 className="navbar-link"
@@ -138,11 +138,11 @@ export const Navbar = () => {
               <a
                 className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
+                href="https://github.com/tinkerverse"
                 target="_blank"
               >
                 <GithubIcon />
-                Source code
+                Develop
               </a>
             </div>
           </motion.div>
