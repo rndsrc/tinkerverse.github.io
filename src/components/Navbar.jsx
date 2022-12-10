@@ -46,31 +46,6 @@ export const Navbar = () => {
             <a className="navbar-link" href="#worlds" aria-label="Worlds">
               Worlds
             </a>
-            <a className="navbar-link" href="#feedback" aria-label="Feedback">
-              Feedback
-            </a>
-            <a className="navbar-link" href="#FAQ" aria-label="FAQ">
-              FAQ
-            </a>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
-        >
-          <div className="grow basis-0 justify-end hidden lg:flex">
-            <a
-              className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/tinkerverse"
-              target="_blank"
-              aria-label="source code"
-            >
-              <GithubIcon />
-              Develop
-            </a>
           </div>
         </motion.div>
         <div
@@ -118,31 +93,6 @@ export const Navbar = () => {
                 aria-label="Worlds"
               >
                 Worlds
-              </a>
-              <a
-                className="navbar-link"
-                href="#feedback"
-                onClick={() => setIsOpen(false)}
-                aria-label="Feedback"
-              >
-                Feedback
-              </a>
-              <a
-                className="navbar-link"
-                href="#FAQ"
-                onClick={() => setIsOpen(false)}
-                aria-label="FAQ"
-              >
-                FAQ
-              </a>
-              <a
-                className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/tinkerverse"
-                target="_blank"
-              >
-                <GithubIcon />
-                Develop
               </a>
             </div>
           </motion.div>
