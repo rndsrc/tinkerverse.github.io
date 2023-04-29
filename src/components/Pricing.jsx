@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
+const pricingData = [
+  "Seamless integration",
+  "Real-time data visualization",
+  "Advanced predictive analytics",
+  "Collaborative environment",
+  "Responsive customer support",
+];
+
 export const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,13 +33,14 @@ export const Pricing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="custom-block-subtitle">
-                Dolor sit amet consectutar
+                Find Your Perfect Fit
               </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
                 Choose your best plan
               </h2>
               <p className="mb-6 text-customGrayText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Select the plan that suits your needs and benefit from our
+                analytics tools.
               </p>
               <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -72,26 +81,12 @@ export const Pricing = () => {
                     The perfect way to get started and get used to our tools.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Vestibulum viverra</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Morbi mollis metus pretium</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Etiam lectus nunc, commodo</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Ut quam nisl mollis id pretium</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Suspendisse bibendum</span>
-                    </li>
+                    {pricingData.map((text, index) => (
+                      <li className="mb-4 flex" key={`${text}-${index}`}>
+                        <CheckArrowIcon />
+                        <span>{text}</span>
+                      </li>
+                    ))}
                   </ul>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
@@ -115,29 +110,15 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
+                    Unlock more features and elevate your data analysis.
                   </p>
                   <ul className="mb-14 text-white">
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Vestibulum viverra</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Morbi mollis metus pretium</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Etiam lectus nunc, commodo</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Ut quam nisl mollis id pretium</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Suspendisse bibendum</span>
-                    </li>
+                    {pricingData.map((text, index) => (
+                      <li className="mb-4 flex" key={`${text}-${index}`}>
+                        <CheckArrowIcon />
+                        <span>{text}</span>
+                      </li>
+                    ))}
                   </ul>
                   <div
                     className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-20"
@@ -161,29 +142,15 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
+                    Experience the full power of our  analytic platform
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Vestibulum viverra</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Morbi mollis metus pretium</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Etiam lectus nunc, commodo</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Ut quam nisl mollis id pretium</span>
-                    </li>
-                    <li className="mb-4 flex">
-                      <CheckArrowIcon />
-                      <span>Suspendisse bibendum</span>
-                    </li>
+                    {pricingData.map((text, index) => (
+                      <li className="mb-4 flex" key={`${text}-${index}`}>
+                        <CheckArrowIcon />
+                        <span>{text}</span>
+                      </li>
+                    ))}
                   </ul>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"

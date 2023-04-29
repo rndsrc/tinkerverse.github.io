@@ -3,9 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { TinkerverseLogo } from "../assets/logos/TinkerverseLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
-import { FacebookIcon } from "../assets/icons/FacebookIcon";
-import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { TwitterIcon } from "../assets/icons/TwitterIcon";
+
+const navbarLinks = [
+  { label: "Home", href: "#home", ariaLabel: "Home" },
+  { label: "Features", href: "#features", ariaLabel: "Features" },
+  { label: "Worlds", href: "#worlds", ariaLabel: "Worlds" },
+];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,14 +40,34 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         >
           <div className="hidden lg:flex h-full pl-12 pb-2">
-            <a className="navbar-link" href="#home" aria-label="Home">
-              Home
-            </a>
-            <a className="navbar-link" href="#features" aria-label="Features">
-              Features
-            </a>
-            <a className="navbar-link" href="#worlds" aria-label="Worlds">
-              Worlds
+            {navbarLinks.map(({ href, label, ariaLabel }) => (
+              <a
+                className="navbar-link"
+                href={href}
+                aria-label={ariaLabel}
+                key={label}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="grow basis-0 justify-end hidden lg:flex">
+            <a
+              className="text-white custom-border-gray rounded-xl
+           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+              href="https://github.com/tinkerverse"
+              target="_blank"
+              aria-label="develop"
+            >
+              <GithubIcon />
+              <span className="pt-px">develop</span>
             </a>
           </div>
         </motion.div>
@@ -57,6 +80,7 @@ export const Navbar = () => {
           <div className="w-5 h-0.5 bg-gray-500 "></div>
         </div>
       </div>
+      {/* Mobile navbar */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -70,29 +94,25 @@ export const Navbar = () => {
         items-center gap-10 pb-10 border-y border-solid border-customDarkBg3 pt-10
         "
             >
+              {navbarLinks.map(({ label, href, ariaLabel }) => (
+                <a
+                  key={href}
+                  className="navbar-link"
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  aria-label={ariaLabel}
+                >
+                  {label}
+                </a>
+              ))}
               <a
-                className="navbar-link"
-                href="#home"
-                onClick={() => setIsOpen(false)}
-                aria-label="Home"
+                className="text-white custom-border-gray rounded-xl
+           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                href="https://github.com/tinkerverse"
+                target="_blank"
               >
-                Home
-              </a>
-              <a
-                className="navbar-link"
-                href="#features"
-                onClick={() => setIsOpen(false)}
-                aria-label="sFeatures"
-              >
-                Features
-              </a>
-              <a
-                className="navbar-link"
-                href="#worlds"
-                onClick={() => setIsOpen(false)}
-                aria-label="Worlds"
-              >
-                Worlds
+                <GithubIcon />
+                develop
               </a>
             </div>
           </motion.div>
