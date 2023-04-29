@@ -20,21 +20,21 @@ export const Features1 = () => {
       >
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <div className="relative w-screen flex justify-center ">
-            <video width="540" height="480" autoplay muted loop>
+            <video width="540" height="480" autoplay="true" muted="true" loop="true">
               <source src={Tinker1} type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
-            <video width="540" height="480" autoplay muted loop>
+            <video width="540" height="480" autoplay="true" muted="true" loop="true">
               <source src={Tinker2} type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
           </div>
           <div className="relative w-screen flex justify-center ">
-            <video width="540" height="480" autoplay muted loop>
+            <video width="540" height="480" autoplay="true" muted="true" loop="true">
               <source src={Tinker3} type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
-            <video width="540" height="480" autoplay muted loop>
+            <video width="540" height="480" autoplay="true" muted="true" loop="true">
               <source src={Tinker4} type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
