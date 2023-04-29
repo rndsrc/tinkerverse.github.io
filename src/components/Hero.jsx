@@ -19,7 +19,6 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-            Into the Tinkerverse
           </div>
         </motion.div>
         <motion.div
@@ -41,7 +40,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-32">
-            Create and Interactive with High Dimensional Data
+            Create, Visualize, and Interact with High Dimensional Data
           </div>
         </motion.div>
         <motion.div
@@ -62,19 +61,6 @@ export const Hero = () => {
             >
               Creator Waitlist
             </div>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10, zIndex: 20 }}
-          animate={{ opacity: 1, y: 0, zIndex: 20 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-        >
-          <div className="relative w-screen flex justify-center ">
-            <img
-              src={dashboard}
-              alt="123"
-              className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl custom-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
-            />
           </div>
         </motion.div>
         <div className="relative w-screen flex justify-center ">
