@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import Tinker1 from "../assets/videos/Tinker1.mp4";
-import Tinker2 from "../assets/videos/Tinker2.mp4";
-import Tinker3 from "../assets/videos/Tinker3.mp4";
-import Tinker4 from "../assets/videos/Tinker4.mp4";
+import Tinker1 from "../assets/videos/Tinker1a.mp4";
+import Tinker2 from "../assets/videos/Tinker2a.mp4";
+import Tinker3 from "../assets/videos/Tinker3a.mp4";
+import Tinker4 from "../assets/videos/Tinker4a.mp4";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features1 = () => {
