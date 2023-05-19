@@ -56,21 +56,19 @@ export const Hero = () => {
           <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
             <div
               className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
-              onClick={() => setIsModalOpen(true)}
             >
-              User Waitlist
+               <a href="https://forms.gle/6i2bPVChpcFedWJp9">User Waitlist</a>
             </div>
             <div
               className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
-              onClick={() => setIsModalOpen(true)}
             >
-              Creator Waitlist
+              <a href="https://forms.gle/4DXJdiyMm5LPvQt39">Creator Waitlist</a>
             </div>
           </div>
         </motion.div>
       </div>
     </section>
-    
+
     <section
       className="w-screen  flex justify-center items-center bg-customDarkBg2 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
       id="home"
