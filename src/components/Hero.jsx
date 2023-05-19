@@ -1,14 +1,19 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import TinkerC from "../assets/videos/Tinker1a.mp4";
+import TinkerA from "../assets/videos/Tinker2a.mp4";
+import TinkerD from "../assets/videos/Tinker3a.mp4";
+import TinkerB from "../assets/videos/Tinker4a.mp4";
+
+import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { InvitationModal } from "./InvitationModal";
-import dashboard from "../assets/images/dashboard.jpg";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section
+    <><section
       className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
       id="home"
     >
@@ -63,26 +68,81 @@ export const Hero = () => {
             </div>
           </div>
         </motion.div>
-        <div className="relative w-screen flex justify-center ">
-          <div className="custom-shape-divider-bottom-1665343298 mt-4 sm:mt-16 md:mt-52 hidden lg:block">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-              className=" bg-customDarkBg2"
-            >
-              <path
-                d="M1200 0L0 0 598.97 114.72 1200 0z"
-                className="shape-fill custom-bg-dark1"
-              ></path>
-            </svg>
-          </div>
-        </div>
       </div>
-      {isModalOpen && (
-        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
-      )}
     </section>
+    
+    <section
+      className="w-screen  flex justify-center items-center bg-customDarkBg2 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
+      id="home"
+    >
+        <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
+                <video width="540" height="480" autoplay="true" muted="true" loop="true">
+                  <source src={TinkerA} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
+                <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
+                  Tinkerverse is a playground<br/>reimagined with the power of AI and VR
+                </p>
+              </div>
+            </div>
+
+            <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
+                <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
+                  A place where ideas are<br/>visualized and shared
+                </p>
+              </div>
+              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
+                <video width="540" height="480" autoplay="true" muted="true" loop="true">
+                  <source src={TinkerB} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
+                <video width="540" height="480" autoplay="true" muted="true" loop="true">
+                  <source src={TinkerC} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
+                <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
+                  A place where you can tinker in<br/>3D, 4D, or beyond
+                </p>
+              </div>
+            </div>
+
+            <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
+                <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
+                  So go ahead Tinkers,<br/>what dimension is your imagination?
+                </p>
+              </div>
+              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
+                <video width="540" height="480" autoplay="true" muted="true" loop="true">
+                  <source src={TinkerD} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </motion.div>
+
+        </div>
+        {isModalOpen && (
+          <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+        )}
+      </section></>
   );
 };

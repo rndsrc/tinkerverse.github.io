@@ -5,9 +5,9 @@ import { TinkerverseLogo } from "../assets/logos/TinkerverseLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "Home", href: "#home", ariaLabel: "Home" },
-  { label: "Characters", href: "#characters", ariaLabel: "Characters" },
-  { label: "Worlds", href: "#worlds", ariaLabel: "Worlds" },
+//  { label: "Home", href: "#home", ariaLabel: "Home" },
+//  { label: "Characters", href: "#characters", ariaLabel: "Characters" },
+//  { label: "Worlds", href: "#worlds", ariaLabel: "Worlds" },
 ];
 
 export const Navbar = () => {
