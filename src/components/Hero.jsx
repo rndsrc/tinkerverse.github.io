@@ -5,6 +5,7 @@ import TinkerC from "../assets/videos/Tinker1a.mp4";
 import TinkerA from "../assets/videos/Tinker2a.mp4";
 import TinkerD from "../assets/videos/Tinker3a.mp4";
 import TinkerB from "../assets/videos/Tinker4a.mp4";
+import SolarSystem from "../assets/images/SolarSystem.png";
 
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { InvitationModal } from "./InvitationModal";
@@ -57,12 +58,7 @@ export const Hero = () => {
             <div
               className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
             >
-               <a href="https://forms.gle/6i2bPVChpcFedWJp9">User Waitlist</a>
-            </div>
-            <div
-              className="w-64 sm:w-52 h-12 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
-            >
-              <a href="https://forms.gle/4DXJdiyMm5LPvQt39">Creator Waitlist</a>
+              <a href="https://apps.apple.com/us/app/tinkerverse/id6474285797">Download Tinkerverse on Apple iOS</a>
             </div>
           </div>
         </motion.div>
@@ -81,62 +77,16 @@ export const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
-              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
-                <video width="540" height="480" autoplay="true" muted="true" loop="true">
-                  <source src={TinkerA} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
+              <div className="w-3/4 lg:w-1/2 flex justify mx-auto pt-1 lg:pt-0">
                 <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
-                  Tinkerverse is a playground<br/>reimagined with the power of AI and VR
+		  Tinkerverse is an augmented reality app that revolutionizes your learning and exploration experience. Step into an extraordinary journey across the universe with the first World in our app---a scalable solar system. Unlike any traditional educational app, Tinkerverse not only offers a wealth of information about our solar system but elevates your experience to new heights. Scale the sun and planets right before your eyes, offering a perspective that truly captures their majestic sizes. This feature provides an unmatched, hands-on learning experience, allowing users to understand and appreciate the vastness and beauty of space like never before. Whether you are a student, educator, or space enthusiast, Tinkerverse's Solar System is your gateway to exploring the cosmos in a way that's both educational and utterly captivating.
                 </p>
               </div>
-            </div>
-
-            <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
-              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
-                <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
-                  A place where ideas are<br/>visualized and shared
-                </p>
-              </div>
-              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
-                <video width="540" height="480" autoplay="true" muted="true" loop="true">
-                  <source src={TinkerB} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-
-            <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
-              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
-                <video width="540" height="480" autoplay="true" muted="true" loop="true">
-                  <source src={TinkerC} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
-                <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
-                  A place where you can tinker in<br/>3D, 4D, or beyond
-                </p>
-              </div>
-            </div>
-
-            <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg2 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
-              <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
-                <p className="mt-6 mb-8 text-1xl lg:text-2xl custom-block-big-title">
-                  So go ahead Tinkers,<br/>what dimension is your imagination?
-                </p>
-              </div>
-              <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
-                <video width="540" height="480" autoplay="true" muted="true" loop="true">
-                  <source src={TinkerD} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+              <div className="w-4/5 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
+		<img src={SolarSystem} alt="Solar System Icon."/>
               </div>
             </div>
           </motion.div>
-
         </div>
         {isModalOpen && (
           <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
